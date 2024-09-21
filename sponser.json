@@ -1,0 +1,69 @@
+
+
+{
+    "component": "SponserRegistration",
+    "form": {
+      "title": "Sponsor Registration",
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "id": "name",
+          "placeholder": "Enter your name",
+          "required": true
+        },
+        {
+          "label": "Email address",
+          "type": "email",
+          "id": "email",
+          "placeholder": "Enter your email",
+          "required": true,
+          "error": "Please enter a valid email address."
+        },
+        {
+          "label": "Password",
+          "type": "password",
+          "id": "password",
+          "placeholder": "Enter your password",
+          "required": true,
+          "error": "Password must be at least 8 characters long."
+        },
+        {
+          "label": "Country",
+          "type": "select",
+          "id": "country",
+          "options": [
+            {"value": "", "text": "Select your country"},
+            {"value": "India", "text": "India"},
+            {"value": "United States", "text": "United States"},
+            {"value": "United Kingdom", "text": "United Kingdom"},
+            {"value": "Australia", "text": "Australia"},
+            {"value": "Canada", "text": "Canada"},
+            {"value": "Germany", "text": "Germany"},
+            {"value": "France", "text": "France"},
+            {"value": "Japan", "text": "Japan"},
+            {"value": "China", "text": "China"},
+            {"value": "Brazil", "text": "Brazil"},
+            {"value": "South Africa", "text": "South Africa"}
+          ],
+          "required": true
+        },
+        {
+          "label": "Phone",
+          "type": "text",
+          "id": "phone",
+          "placeholder": "Enter your phone number",
+          "required": true
+        }
+      ],
+      "submitButton": {
+        "text": "Create Account",
+        "class": "btn btn-primary"
+      }
+    },
+    "signinLink": {
+      "text": "Already have an account? Sign In",
+      "to": "/SponserSignin"
+    }
+  }
+  

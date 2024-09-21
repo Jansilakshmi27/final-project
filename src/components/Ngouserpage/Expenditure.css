@@ -1,0 +1,68 @@
+
+.expenditures {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #000; /* Black background for the card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* Subtle shadow for the card */
+}
+
+h2 {
+    text-align: center;
+    color: #fff; /* White text for headings */
+}
+
+.add-expenditure {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-expenditure input {
+    padding: 10px;
+    border: 1px solid #faf7f7; /* Darker border for input fields */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000000; /* White text for input fields */
+    background-color: #fffefe; /* Dark background for input fields */
+}
+
+.add-expenditure button {
+    padding: 10px;
+    background-color: #007bff; /* Blue background for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-expenditure button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.expenditure-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expenditure-item {
+    padding: 15px;
+    background-color: #333; /* Dark background for expenditure items */
+    border: 1px solid #444; /* Dark border for expenditure items */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05); /* Subtle shadow for items */
+}
+
+.expenditure-item div {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff; /* White text for expenditure details */
+}
+
+.expenditure-item strong {
+    color: #ffd700; /* Gold color for labels */
+}

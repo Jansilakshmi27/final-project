@@ -1,0 +1,123 @@
+/* Main profile container with dark theme */
+.profile-content {
+    background-color: #414040;
+    color: #f0f0f0;
+    padding: 20px;
+    
+  }
+  
+  .profile-card {
+    background-color: #111;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    
+  }
+  .profile-details p {
+    position: relative;   /* Enable relative positioning */
+    top: px;           /* Move text up */
+    left: 20px;           /* Move text to the right */
+  }
+  .profile-details p, .profile-details textarea {
+    color: #f0f0f0;
+   /* Light grey or white for better visibility on black theme */
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #1e90ff; /* Blue border for profile picture */
+  }
+  .text-blue {
+    margin-left: 2%;
+    color: #a3a3a3; /* Blue color */
+  }
+  
+  /* Profile form inputs */
+  .input-dark {
+    background-color: #222;
+    color: #f0f0f0;
+    border: 1px solid #555;
+  }
+  
+  .input-dark::placeholder {
+    color: #888; /* Visible placeholder text */
+  }
+  
+  .input-dark:focus {
+    background-color: #333;
+    color: #fff;
+    border-color: #1e90ff; /* Blue outline on focus */
+  }
+  
+  /* File input styling */
+  .file-input {
+    margin-top: 10px;
+    color: #1e90ff;
+  }
+  
+  /* Profile details */
+  .profile-details h2 {
+    color: #cad0d6; /* Blue for headings */
+  }
+  
+  .card-text strong {
+    color: #00bfff;
+    display: flex;
+    text-align: left; /* Lighter blue for emphasis */
+  }
+  
+  .card-body a.btn-primary {
+    background-color: #1e90ff;
+    border-color: #1e90ff;
+    transition: background-color 0.3s ease;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .card-body a.btn-primary:hover {
+    background-color: #00bfff;
+    border-color: #00bfff;
+  }
+  
+  /* Edit and cancel buttons */
+  .btn-secondary {
+    background-color: #333;
+    border-color: #555;
+    color: #f0f0f0;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .btn-secondary:hover {
+    background-color: #444;
+    border-color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-card {
+      padding: 20px;
+    }
+  
+    .profile-picture {
+    
+      width: 100px;
+      height: 100px;
+    }
+  
+    .card-body h2 {
+      font-size: 22px;
+    }
+  
+    .card-body p {
+      font-size: 16px;
+    }
+  }
+  

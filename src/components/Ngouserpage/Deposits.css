@@ -1,0 +1,39 @@
+/* Deposits.css */
+
+.deposits {
+    background-color: black; /* Set background to black */
+    color: rgb(14, 13, 13); /* Set text color to white for readability */
+    padding: 8px; /* Add some padding */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Optional: add shadow for depth */
+    text-align: center; /* Center all text content */
+    
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    color: #71def7; /* Set heading color to blue */
+}
+
+.deposit-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox to center items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.deposit-list li {
+    background-color: #ffffff; /* Darker background for the deposit box */
+    padding: 10px; /* Reduced padding inside each deposit box */
+    margin-bottom: 10px; /* Space between each box */
+    border-radius: 5px; /* Rounded corners for the boxes */
+    box-shadow: 0 2px 5px rgb(231, 228, 228); /* Subtle shadow for depth */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    width: 60%; /* Optional: Set a width for the deposit boxes */
+    border: 1px solid #faf7f7;
+}
+
+.deposit-list li:hover {
+    transform: translateY(-1px); /* Slight lift on hover */
+}

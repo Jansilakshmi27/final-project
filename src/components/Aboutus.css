@@ -1,0 +1,172 @@
+/* Global theme: black background with blue secondary color */
+
+.about-us-container {
+  padding: top 30%;;
+  margin-top: 40%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; /* Black background */
+  color: #e0e0e0; /* Light text for readability */
+  padding: 30px 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Header Section */
+.about-header {
+  padding-top: 70%;
+  text-align: center;
+  background-color: #0562c9; /* Secondary blue color */
+  padding: 20px;
+  color: white;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.about-header:hover {
+  background-color: #0453a8; /* Slightly darker blue on hover */
+}
+
+.about-header h1 {
+ font-size: 2.5rem;
+  font-weight: bold;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.about-header p {
+  margin-top: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.3rem;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  color: #e0e0e0; /* Light text */
+}
+
+@media (max-width: 768px) {
+  .about-image img {
+    width: 10%; /* Adjust image width on small screens */
+  }
+  .about-text {
+    width: 90%; /* Adjust text width on small screens */
+  }
+}
+.about-image{
+  width: 5%;
+  height: 5%;
+  margin-right: 70%;
+}
+
+
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+  
+}
+
+.about-text {
+  width: 40%;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #0562c9; /* Blue secondary color */
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.about-text h2:hover {
+  color: #0453a8; /* Darker blue on hover */
+}
+
+/* Vision and Mission Section */
+.vision-mission {
+  background-color: #1b1b1b; /* Darker black section */
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.vision, .mission {
+  margin: 20px;
+  padding: 20px;
+  background-color: #121212;
+  border: 1px solid #0562c9;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.vision:hover, .mission:hover {
+  transform: scale(1.05);
+  background-color: #1b1b1b;
+}
+
+.vision h2, .mission h2 {
+  font-size: 2rem;
+  color: #0562c9;
+  transition: color 0.3s ease;
+}
+
+.vision p, .mission p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.vision h2:hover, .mission h2:hover {
+  color: #0453a8;
+}
+
+/* Footer Section */
+.about-footer {
+  text-align: center;
+  padding: 0px;
+  background-color: #0562c9;
+  color: white;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.about-footer:hover {
+  background-color: #0453a8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

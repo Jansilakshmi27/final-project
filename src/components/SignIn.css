@@ -1,0 +1,110 @@
+/* src/SignIn.css */
+body {
+  background: rgb(40, 40, 40);
+  /* Gray background */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: 0;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.sign-in-form {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black transparent background */
+  padding: 30px;
+
+  /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  /* Subtle shadow for depth */
+  max-width: 350px;
+  /* Smaller width */
+  width: 150%;
+  /* Responsive */
+  text-align: left;
+}
+
+.sign-in-form h2 {
+  text-align: center;
+  color: #00d2ff;
+  margin-bottom: 15px;
+  /* Adjusted margin */
+  font-size: 18px;
+  /* Slightly smaller font */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  /* Adjusted spacing */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7);
+  /* Slightly transparent white */
+  transition: color 0.3s ease;
+}
+
+.form-group label:hover {
+  color: #00d2ff;
+  /* Change to blue on hover */
+  text-decoration: underline;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 210, 255, 0.1);
+  /* Transparent input background */
+  border: 1px solid #d4dcddb1;
+  /* Border color matching the theme */
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  /* Text color for better readability */
+}
+
+.submit-btn {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #00d2ff, #3a7bd5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+  /* Adjusted margin */
+  font-size: 12px;
+  /* Slightly smaller font */
+  color: whitesmoke;
+}
+
+.signup-link a {
+  color: #00d2ff;
+  text-decoration: none;
+  font-size: small;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

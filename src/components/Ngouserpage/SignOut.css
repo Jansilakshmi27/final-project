@@ -1,0 +1,49 @@
+
+.signout-container {
+    max-width: 400px; /* Maximum width for the container */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: #000; /* Black background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+}
+
+.confirmation {
+    margin-bottom: 20px; /* Space between confirmation text and buttons */
+}
+
+.confirmation-buttons {
+    display: flex; /* Use flexbox for button alignment */
+    justify-content: center; /* Center buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+.confirm-btn, .cancel-btn {
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.confirm-btn {
+    background-color: #007bff; /* Blue background for confirm button */
+    color: white; /* White text for confirm button */
+}
+
+.confirm-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.cancel-btn {
+    background-color: #dc3545; /* Red background for cancel button */
+    color: white; /* White text for cancel button */
+}
+
+.cancel-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+

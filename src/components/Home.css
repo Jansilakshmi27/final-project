@@ -1,0 +1,85 @@
+/* Global styling */
+body {
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: Arial, sans-serif;
+}
+
+/* Home container to center content */
+.home-container { 
+  height: 100vh; /* Full view height */
+  width: 100vw; /* Full view width */
+  color: #fff;
+  padding: 0; /* Remove extra padding */
+}
+
+/* Navbar */
+.navbar {
+  position: absolute; /* Fixed at the top */
+  top: 0;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Spread out the items */
+  padding: 10px 15px;
+  background-color: rgb(0, 0, 0); /* Semi-transparent background */
+}
+
+
+.logo img {
+  width: 100px; /* Adjust logo size */
+  height: auto;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 0px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #ffdd57; /* Change on hover */
+}
+
+/* Centered content */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 300px;
+  text-align: center; /* Center text alignment */
+  margin-top: 110px; /* Push content below navbar */
+}
+
+.content h1 {
+  font-size: 40px; /* Slightly smaller heading */
+  color: #ffffff;
+  margin-bottom: 20px;
+  
+  max-width: 900px; /* Limit width of the heading */
+}
+
+.content p {
+  font-size: 18px; /* Slightly smaller paragraph text */
+  color: #f0f0f0;
+  margin-right: 150px;
+  line-height: 1.6;
+  margin-left: 50px;
+  max-width: 700px; /* Limit width of the text */
+}
+
+/* Button styles */
+
+

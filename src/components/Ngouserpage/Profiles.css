@@ -1,0 +1,105 @@
+/* Common container styles for both dashboard and NGO */
+.ngo-container, .dashboard-container {
+    background-color: #080808; /* Light gray or any color you prefer for the background */
+    padding: 30px; /* Add padding around the container */
+    min-height: 100vh; /* Ensure the container covers the full height of the viewport */
+}
+
+/* Common card styles for both dashboard and NGO */
+.ngo-card, .dashboard-card {
+    background-color: #fcf7f711; /* White background for the card */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for the card */
+    max-width: 800px; /* Max width for the card */
+    width: 100%; /* Full width of its container up to max-width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for card */
+}
+
+/* Profile picture styling for both dashboard and NGO */
+.ngo-profile-picture, .profile-picture {
+    width: 100px; /* Profile picture width */
+    height: 100px; /* Profile picture height */
+    object-fit: center; /* Cover the container */
+    border-radius: 50%; /* Circular shape */
+    border: 2px solid #88888a; /* Blue border for profile picture */
+    justify-content: center;
+}
+
+/* Input and textarea styling for both dashboard and NGO */
+.ngo-input-dark, .input-dark {
+    background-color: #f0eaea1a; /* Light background for inputs */
+    color: #333; /* Dark text color for contrast */
+    border: 1px solid #ccc; /* Light gray border */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.ngo-input-dark::placeholder, .input-dark::placeholder {
+    color: #fdfafa; /* Placeholder text color */
+}
+
+.ngo-input-dark:focus, .input-dark:focus {
+    background-color: #ffffff; /* White background on focus */
+    color: #333; /* Dark text color */
+    border-color: #1e90ff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.ngo-input-dark:focus::placeholder, .input-dark:focus::placeholder {
+    color: #888; /* Keep placeholder color same on focus */
+}
+
+/* File input styling */
+.ngo-file-input, .file-input {
+    margin-top: 10px; /* Space above the file input */
+    color: #1e90ff; /* Color for file input text */
+}
+
+/* Button styles for both dashboard and NGO */
+.ngo-btn-container, .btn-container {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 40px; /* Increase gap between the buttons */
+    margin-top: 40px; /* Space above the button container */
+}
+
+.ngo-btn-primary, .btn-primary {
+    background-color: #070707; /* Primary button background */
+    border-color: #fcfeff; /* Primary button border */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    padding: 10px 20px; /* Add padding to the button */
+    color: #fff; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    gap:10px;
+}
+
+.ngo-btn-primary:hover, .btn-primary:hover {
+    background-color: fafcfd; /* Lighter blue on hover */
+    border-color: #f0f4f5; /* Lighter border on hover */
+}
+
+.ngo-btn-secondary, .btn-secondary {
+    background-color: #ffffff; /* Background for secondary buttons */
+    border-color: hsl(0, 0%, 1%); /* Border for secondary buttons */
+    color: #0c0c0c; /* Text color for secondary buttons */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    padding: 10px 20px; /* Add padding to the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    justify-content: center;
+}
+
+.ngo-btn-secondary:hover, .btn-secondary:hover {
+    background-color: #007bff; /* Blue background on hover */
+    border-color: #f7f8f8; /* Blue border on hover */
+}
+
+/* Ensure no text color change on click */
+.ngo-btn-primary:focus, 
+.ngo-btn-secondary:focus,
+.btn-primary:focus, 
+.btn-secondary:focus {
+    outline: none; /* Remove default outline on focus */
+    box-shadow: 0 0 0 2px #1e90ff; /* Add blue box shadow on focus */
+    color: inherit; /* Keep text color unchanged */
+    gap:10px;
+}
