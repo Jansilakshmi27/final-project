@@ -13,6 +13,8 @@ import Donate from './components/Sponseruserpage/Donate';
 // import Transactions from './components/Sponseruserpage/Transactions';
 import SponsorRoutes from './components/Sponseruserpage/SponserRoutes';
 import AboutUs from './components/Aboutus';
+import Sidebar from './components/ngouserpage/Sidebars';
+
 
 
 const App = () => {
@@ -30,6 +32,7 @@ const App = () => {
         <Route path="/NGORegistration" element={<NGORegistrationform/>}/>
         <Route path="/ngosignin" element={<NGOSignIn/>}/> 
         <Route path="/sponsor" element={<Sponsor />} /> 
+        <Route path ="/ngouserpage" element={<Sidebars/>}/>
 
         
         {/* Dashboard for the sponsor's user page */}

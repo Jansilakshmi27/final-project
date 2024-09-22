@@ -29,14 +29,16 @@ const Home = () => {
           <li onClick={() => navigate('/join')}>Join Us</li>
         </ul>
       </nav>
+      
 
       <div className="content">
-        <h1>Empowering NGOs for a Better Tomorrow</h1>
+        <h1> Empowering NGOs for a Better Tomorrow</h1>
         <p>
           We provide a space where organizations can share their missions, achievements,
           and goals, while sponsors can highlight their contributions to meaningful causes.
         
         </p>
+      
         <button 
   style={{ backgroundColor: 'lightblue', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px' }} 
   onClick={() => navigate('/register')}

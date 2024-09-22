@@ -1,7 +1,8 @@
+// NGORegistrationform.js
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NGORegistrationform.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Use useNavigate from react-router-dom v6
 
 function NGORegistrationform() {
   const [formData, setFormData] = useState({
@@ -17,6 +18,7 @@ function NGORegistrationform() {
   });
 
   const [errors, setErrors] = useState({});
+  const navigate = useNavigate(); // Declare navigate
 
   const handleChange = (e) => {
     const { name, value, type, files } = e.target;
@@ -60,6 +62,9 @@ function NGORegistrationform() {
       });
       const result = await response.json();
       alert(result.message);
+
+      // After successful registration, navigate to NGO user page
+      navigate('/ngouserpage'); 
     } catch (error) {
       console.error('Error:', error);
     }
@@ -71,7 +76,6 @@ function NGORegistrationform() {
 
       <form onSubmit={handleSubmit}>
         <div className="row">
-          {/* Left Container - Basic Information */}
           <div className="col-md-6">
             <div className="mb-3">
               <input
@@ -134,7 +138,6 @@ function NGORegistrationform() {
             </div>
           </div>
 
-          {/* Right Container - Legal Information */}
           <div className="col-md-6">
             <div className="mb-3">
               <input
@@ -184,17 +187,11 @@ function NGORegistrationform() {
             </div>
           </div>
 
-          {/* Centered Submit Button */}
           <div className="col-12 text-center">
             <button className="btn btn-primary" type="submit">Submit</button>
           </div>
         </div>
       </form>
-      <div class="col-12 text-center">
-      <p className="signin-link">
-        Already have an account? <Link to="/ngosignin">Sign In</Link>
-      </p>
-    </div>
     </div>
   );
 }
