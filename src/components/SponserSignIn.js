@@ -1,7 +1,8 @@
 // src/SignIn.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './SignIn.css';
 import { Link, useNavigate } from 'react-router-dom';
+// import axios from 'axios';
 
 function SponserSignIn() {
   const [email, setEmail] = useState('');
@@ -9,26 +10,33 @@ function SponserSignIn() {
   const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
 
-  const handleSignIn = (e) => {
+  // Set dummy email and password for testing
+  useEffect(() => {
+    setEmail('swathyvinayak33@gmail.com'); // Dummy email
+    setPassword('password123'); // Dummy password
+  }, []);
+
+  const handleSignIn = async (e) => {
     e.preventDefault();
-    
-    // Simulate sign-in validation logic
-    if (email === 'valid@example.com' && password === 'validPassword') {
-      console.log('Sign In successful');
-      // Clear any previous error message
-      setErrorMessage('');
-      // Navigate to the sponser user page after successful login
+  
+    // Simulate the email and password check
+    if (email === 'hema26@example.com' && password === 'password123') {
+      // Simulate a token
+      const token = 'dummy-jwt-token';
+  
+      // Save token to local storage (as it would in a real situation)
+      localStorage.setItem('token', token);
+  
+      // Navigate to the sponsor user page after successful login
       navigate('/sponseruserpage');
     } else {
-      console.log('Invalid credentials');
-      // Show error message in red
-      setErrorMessage('Invalid username or password');
+      setErrorMessage('Invalid email or password');
     }
   };
-
+  
   return (
     <div className="sign-in-form">
-      <h2> Sponser Sign In</h2>
+      <h2>Sponser Sign In</h2>
       <form onSubmit={handleSignIn}>
         <div className="form-group">
           <label htmlFor="email">Email address</label>
@@ -52,7 +60,6 @@ function SponserSignIn() {
             required
           />
         </div>
-        {/* Display error message if credentials are invalid */}
         {errorMessage && <p className="error-message">{errorMessage}</p>}
         <button type="submit" className="submit-btn">Sign In</button>
       </form>

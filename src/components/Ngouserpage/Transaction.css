@@ -21,13 +21,13 @@ h2 {
     background-color: #e9e7e7; /* Darker background for the boxes */
     padding: 20px; /* Padding for the boxes */
     border-radius: 10px; /* Rounded corners for the boxes */
-    margin-bottom: 20px; /* Space between the boxes */
+    margin-bottom: 30px; /* Space between the boxes */
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Soft shadow for depth */
 }
 
 .donation-box h3,
 .expenditure-box h3 {
-    margin-bottom: 15px; /* Space below the section headings */
+    margin-bottom: 20px; /* Space below the section headings */
     color: #2a9d8f; /* Color for the section headings */
     font-size: 20px; /* Font size for section headings */
     border-bottom: 2px solid #2a9d8f; /* Underline for headings */

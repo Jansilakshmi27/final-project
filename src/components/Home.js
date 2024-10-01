@@ -18,9 +18,14 @@ const Home = () => {
     >
       <nav className="navbar">
         <div className="logo">
-          <img src={logo} alt="Atruserve Logo" />
+          <img src={logo} alt="Atruserve Logo" /> 
           {/* <span className="logo-text">ALTRUSERVE</span> */}
         </div>
+        <div className="logotext" >
+  
+</div>
+
+
         <ul className="nav-links">
           <li onClick={() => navigate('/')}>Home</li>
           <li onClick={() => navigate('/about')}>About Us</li>
@@ -40,7 +45,7 @@ const Home = () => {
         </p>
       
         <button 
-  style={{ backgroundColor: 'lightblue', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px' }} 
+  style={{ backgroundColor:  '#0056b3', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px' }} 
   onClick={() => navigate('/register')}
 >
   Register

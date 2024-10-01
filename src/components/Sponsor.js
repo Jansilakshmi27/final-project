@@ -1,44 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faDonate, faFileInvoiceDollar, faHandsHelping} from '@fortawesome/free-solid-svg-icons';
+import { faUser, faDonate, faFileInvoiceDollar, faHandsHelping, faSearch, faBalanceScale } from '@fortawesome/free-solid-svg-icons';
 import './Sidebar.css';
-import logo from '../../assets/logo.png';
-
-
 
 
 const Sponsor = () => {
   return (
-   
+    
     <div className="sidebar">
-    <div className="sidebar-header">
-      <img src={logo} alt="Logo88888" className="logo" />
-      <span className="brand-name">ALTRUSERVE</span>
-    </div>
+      <div className="sidebar-header">
+        <img src="/path/to/altruserve.png" alt="AltruServe Logo" className="logo" />
+      </div>
 
       <ul>
         <li className="sidebar-item">
-          <Link to="/sponseruserpage/profile">
+          <Link to="/Profile">
             <FontAwesomeIcon icon={faUser} className="icon" />
             <span className="text">Profile</span>
           </Link>
         </li>
-       
         <li className="sidebar-item">
-          <Link to="/sponseruserpage/donate">
+          <Link to="/donate">
             <FontAwesomeIcon icon={faDonate} className="icon" />
             <span className="text">Donate</span>
           </Link>
         </li>
         <li className="sidebar-item">
-          <Link to="/sponseruserpage/transactions">
+          <Link to="/transactions">
             <FontAwesomeIcon icon={faFileInvoiceDollar} className="icon" />
             <span className="text">Transactions</span>
           </Link>
-        </li>
+        </li> 
         <li className="sidebar-item">
-          <Link to="/sponseruserpage/viewngos">
+          <Link to="/viewngos">
             <FontAwesomeIcon icon={faHandsHelping} className="icon" />
             <span className="text">View NGOs</span>
           </Link>

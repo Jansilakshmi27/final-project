@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NGORegistrationform.css';
 import { useNavigate } from 'react-router-dom'; // Use useNavigate from react-router-dom v6
+import { Link } from 'react-router-dom';
 
 function NGORegistrationform() {
   const [formData, setFormData] = useState({
@@ -192,6 +193,9 @@ function NGORegistrationform() {
           </div>
         </div>
       </form>
+      <p className="signin-link">
+        Already have an account? <Link to="/ngosignin">Sign In</Link>
+      </p>
     </div>
   );
 }

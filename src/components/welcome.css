@@ -1,0 +1,91 @@
+/* General Styles */
+.welcome-container {
+  padding-top:70px;
+  padding-left:50px;
+  padding-right: 50px;
+  padding-bottom: 180px;
+ 
+  max-width: 1000px;
+  margin-left: 18%;
+  background-color: #000;
+  color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+h2 {
+  color:  #0d5194; /* Blue accents for headings */
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+h1 {
+  color: #0d5194; /* Blue accents for headings */
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+strong {
+  color: #7a7a7a; /* Lighter blue for emphasis */
+}
+
+/* User Guide Section */
+.user-guide {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.user-guide ol {
+  margin-left: 20px;
+}
+
+.user-guide li {
+  margin-bottom: 10px;
+}
+
+.user-guide li::marker {
+  color: #00bfff;
+}
+
+/* Profile Details Section */
+.profile-details {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 8px;
+}
+
+.profile-details p {
+  margin: 10px 0;
+}
+
+/* Hover Animation */
+.user-guide:hover, .profile-details:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .user-guide, .profile-details {
+    padding: 15px;
+  }
+}

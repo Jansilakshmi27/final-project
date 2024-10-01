@@ -15,10 +15,10 @@ const SponsorRoutes = () => {
       {/* Define the routes for the components within the sponsor's user page */}
       <div className="sponsor-content">
         <Routes>
-          <Route path="/sponseruserpage/profile" element={<Profile />} />
-          <Route path="/sponseruserpage/donate" element={<Donate />} />
-          <Route path="/sponseruserpage/transactions" element={<Transactions />} />
-          <Route path="/sponseruserpage/viewngos" element={<ViewNGOs />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/transactions" element={<Transactions />} />
+          <Route path="/viewngos" element={<ViewNGOs />} />
         </Routes>
       </div>
     </div>

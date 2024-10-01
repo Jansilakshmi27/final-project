@@ -53,7 +53,7 @@ function NGOSignIn() {
     console.log('Sign In form submitted');
     
     // After successful sign-in, navigate to another page (e.g., dashboard)
-    navigate('/dashboard'); // Change this to your desired route
+    navigate('/ngouserpage'); // Change this to your desired route
   };
 
   return (

@@ -5,6 +5,8 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
+
 /* Home container to center content */
 .home-container { 
   height: 100vh; /* Full view height */
@@ -41,9 +43,11 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
+  gap: 20px; /* Adjust the spacing as needed */
   margin: 0;
   padding: 0;
 }
+
 
 .nav-links li {
   margin-left: 0px;
@@ -58,34 +62,44 @@ body {
 }
 
 /* Centered content */
+/* Container for all content */
+
+
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  text-align: center; /* Center text alignment */
-  margin-top: 110px; /* Push content below navbar */
-  width: 100%; /* Ensure the content takes the full width */
+  align-items: center;  /* Centers items horizontally */
+  justify-content: center;  /* Centers items vertically */
+  text-align: center;  /* Centers text within the element */
+  margin-top: 110px;  /* Pushes content below the navbar */
+  width: 100%;  /* Ensures the content takes up the full width */
+  min-height: calc(100vh - 110px);  /* Full page height minus the navbar */
 }
 
-
+/* Styling for the heading */
 .content h1 {
   font-size: 40px; /* Slightly smaller heading */
   color: #ffffff;
-  margin-bottom: 20px;
-  
-  max-width: 900px; /* Limit width of the heading */
+  margin: 0 auto 20px; /* Auto margin horizontally, 20px margin at the bottom */
+  max-width: 900px; /* Restrict width */
+  text-align: center; /* Ensure text is centered within the element */
 }
 
+/* Styling for paragraphs */
 .content p {
   font-size: 18px; /* Slightly smaller paragraph text */
   color: #f0f0f0;
-  margin-right: 150px;
   line-height: 1.6;
-  margin-left: 50px;
   max-width: 700px; /* Limit width of the text */
+  margin: 0 auto; /* Ensure the paragraph is centered */
 }
 
-/* Button styles */
+/* Optional: if there's a button or any additional elements, center them too */
+.content button, 
+.content .additional-element {
+  margin: 20px auto; /* Center button or other elements */
+  text-align: center;
+}
+
 
 

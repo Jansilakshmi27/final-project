@@ -7,13 +7,17 @@ import SponserRegistration from './components/SponserRegistration';
 import NGORegistrationform from './components/NGORegistrationform';
 import NGOSignIn from './components/NGOSignin';
 import SponserSignIn from './components/SponserSignIn';
-import Sponsor from './components/Sponseruserpage/Sponsor'; // Sidebar for sponsor's user page
-import Profile from './components/Sponseruserpage/Profile'; // Example components inside sponsor page
-import Donate from './components/Sponseruserpage/Donate';
+// import Sponsor from './components/Sponseruserpage/Sponsor'; // Sidebar for sponsor's user page
+// import Profile from './components/Sponseruserpage/Profile'; // Example components inside sponsor page
+// import Donate from './components/Sponseruserpage/Donate';
 // import Transactions from './components/Sponseruserpage/Transactions';
 import SponsorRoutes from './components/Sponseruserpage/SponserRoutes';
 import AboutUs from './components/Aboutus';
-import Sidebar from './components/ngouserpage/Sidebars';
+// import Sidebar from './components/Ngouserpage/Sidebars';
+import JoinUs from './components/Joinus';
+import NgoRoutes from './components/Ngouserpage/NgoRoutes';
+
+
 
 
 
@@ -25,17 +29,15 @@ const App = () => {
         <Route path="/about" element={<AboutUs/>}/>
         <Route path="/sponsor-login" element={<SponserSignIn />} />
         <Route path="/admin-login" element={<div>Admin Login Page</div>} />
-        <Route path="/join" element={<div>Join Us Page</div>} />
+        <Route path="/join" element={<JoinUs/>}/>
         <Route path="/register" element={<SNregister />} />
         <Route path="/sponserregistration" element={<SponserRegistration />} />
         <Route path="/SponserSignin" element={<SponserSignIn/>}/>
         <Route path="/NGORegistration" element={<NGORegistrationform/>}/>
         <Route path="/ngosignin" element={<NGOSignIn/>}/> 
-        <Route path="/sponsor" element={<Sponsor />} /> 
-        <Route path ="/ngouserpage" element={<Sidebars/>}/>
-
         
-        {/* Dashboard for the sponsor's user page */}
+        <Route path ="/ngouserpage/*" element={<NgoRoutes/>}/>
+
         <Route path="/sponseruserpage/*" element={<SponsorRoutes />} />   
         
       </Routes>

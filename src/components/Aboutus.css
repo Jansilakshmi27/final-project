@@ -1,8 +1,8 @@
 /* Global theme: black background with blue secondary color */
 
 .about-us-container {
-  padding: top 30%;;
-  margin-top: 40%;
+  padding: top 20%;;
+  margin-top: 80%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #121212; /* Black background */
   color: #e0e0e0; /* Light text for readability */
@@ -52,18 +52,19 @@
     width: 10%; /* Adjust image width on small screens */
   }
   .about-text {
-    width: 90%; /* Adjust text width on small screens */
+    width: 50%; /* Adjust text width on small screens */
   }
 }
 .about-image{
-  width: 5%;
-  height: 5%;
-  margin-right: 70%;
+  width: 1%;
+  height: 3%;
+  margin-right:40%;
+
 }
 
 
 .about-image img:hover {
-  transform: scale(1.05);
+  transform: scale(1);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
   
 }

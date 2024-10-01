@@ -28,7 +28,7 @@
 
 /* Input and textarea styling for both dashboard and NGO */
 .ngo-input-dark, .input-dark {
-    background-color: #f0eaea1a; /* Light background for inputs */
+    background-color: #fdf7f7a6; /* Light background for inputs */
     color: #333; /* Dark text color for contrast */
     border: 1px solid #ccc; /* Light gray border */
     transition: border-color 0.3s; /* Smooth transition for border color */

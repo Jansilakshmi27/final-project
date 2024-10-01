@@ -15,31 +15,31 @@ const Sidebar = () => {
       </div>
       <ul>
         <li className="sidebar-item">
-          <Link to="/profile">
+          <Link to="/ngouserpage/profile">
             <FontAwesomeIcon icon={faUser} className="icon" />
             <span className="text">Profile</span>
           </Link>
         </li>
         <li className="sidebar-item">
-          <Link to="/deposits">
+          <Link to="/ngouserpage/deposits">
             <FontAwesomeIcon icon={faMoneyBillWave} className="icon" />
             <span className="text">Deposits</span>
           </Link>
         </li>
         <li className="sidebar-item">
-          <Link to="/expenditure">
+          <Link to="/ngouserpage/expenditure">
             <FontAwesomeIcon icon={faDonate} className="icon" />
             <span className="text">Expenditure</span>
           </Link>
         </li>
         <li className="sidebar-item">
-          <Link to="/transactions">
+          <Link to="/ngouserpage/transactions">
             <FontAwesomeIcon icon={faFileInvoiceDollar} className="icon" />
             <span className="text">Transactions</span>
           </Link>
         </li>
         <li className="sidebar-item">
-          <Link to="/signout">
+          <Link to="/ngouserpage/signout">
             <FontAwesomeIcon icon={faSignOutAlt} className="icon" />
             <span className="text">Sign Out</span>
           </Link>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './SponsorProfile.css';
+import '../styles/profile.css';
 
 const Profile = () => {
   // State for user profile data
@@ -45,9 +45,6 @@ const Profile = () => {
         <div className="card profile-card shadow-lg">
           <div className="row g-0">
             <div className="col-md-4 text-center">
- 
-
-
               {/* Profile Picture */}
               <img
                 src={newPicture || profile.profilePicture}
